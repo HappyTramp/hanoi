@@ -3,4 +3,6 @@
 
 # include <ncurses.h>
 
+# include "tower.h"
+
 #endif
