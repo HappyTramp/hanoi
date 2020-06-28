@@ -1,4 +1,4 @@
-#include "tower.h"
+#include "hanoi.h"
 
 static uint8_t	st_tower_pop(t_tower *tower)
 {

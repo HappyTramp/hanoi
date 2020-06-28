@@ -6,8 +6,10 @@ Tower of hanoi puzzle with ncurses.
 
 ```
 make
-./hanoi [number of disks]
+./hanoi [number of disks] [-s]
 ```
+
+Use `-s` to solve the puzzle.
 
 ### Controls
 
