@@ -6,7 +6,7 @@
 #    By: charles <charles.cabergs@gmail.com>               /o  o \             #
 #                                                         /  v    \            #
 #    Created: 2020/06/27 13:12:43 by charles             /    _    \           #
-#    Updated: 2020/06/27 13:12:48 by charles            '-----------'          #
+#    Updated: 2020/06/28 07:50:23 by charles            '-----------'          #
 #                                                                              #
 # ############################################################################ #
 
@@ -22,7 +22,7 @@ SRC = $(shell find $(SRCDIR) -name "*.c")
 OBJ = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
 CC = gcc
-CCFLAGS = -I$(INCDIR) -Wall -Wextra #-Werror
+CCFLAGS = -I$(INCDIR) -Wall -Wextra -Wpedantic #-Werror
 LDFLAGS = -lncurses
 
 NAME = hanoi

@@ -6,7 +6,7 @@
 /*   By: charles <charles.cabergs@gmail.com>               /o  o \            */
 /*                                                        /  v    \           */
 /*   Created: 2020/06/27 14:06:50 by charles             /    _    \          */
-/*   Updated: 2020/06/27 16:19:32 by charles            '-----------'         */
+/*   Updated: 2020/06/28 08:12:37 by charles            '-----------'         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,16 @@ typedef struct
 	size_t	len;
 }			t_tower;
 
+enum e_highlight
+{
+	HIGHLIGHT_NONE    = 0,
+	HIGHLIGHT_FROM    = 1 << 0,
+	HIGHLIGHT_CURRENT = 1 << 1,
+};
+
 void	towers_init(t_tower towers[3], size_t disk_num);
 void	towers_move(t_tower towers[3], size_t from, size_t to);
-void	tower_put(t_tower *tower, WINDOW *win, int highlight_level);
+void	tower_put(t_tower *tower, WINDOW *win, enum e_highlight highlight_level);
+uint8_t	tower_peek(t_tower *tower);
 
 #endif
